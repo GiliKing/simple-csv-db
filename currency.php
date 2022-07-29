@@ -2,7 +2,6 @@
 
 include_once "./config/Database.php";
 
-echo "yes";
 
 class Upload {
 
@@ -49,13 +48,13 @@ class Upload {
                    if(!isset($result)){
                     echo "<script type='text/javascript'>
                         alert('Invalid File:Please Upload CSV File.');
-                        window.location.href = 'first.php';
+                        window.location.href = 'index.php';
                         </script>";   
                     }
                     else {
                         echo "<script type='text/javascript'>
                         alert('CSV File has been successfully Imported.');
-                        window.location.href = 'first.php';
+                        window.location.href = 'index.php';
                         </script>";
                     }
                } 

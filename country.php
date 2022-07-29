@@ -1,6 +1,6 @@
 <?php
 
-include_once "../config/Database.php";
+include_once "./config/Database.php";
 
 
 class Upload {
@@ -28,7 +28,6 @@ class Upload {
        
            if($_FILES["file"]["size"] > 0 && !empty($_FILES['file']['name']) && in_array($_FILES['file']['type'], $fileMimes)){ 
        
-               require '../config/Database.php';
        
                $file = fopen($filename, "r");
        
@@ -50,13 +49,13 @@ class Upload {
                    if(!isset($result)){
                     echo "<script type='text/javascript'>
                         alert('Invalid File:Please Upload CSV File.');
-                        window.location.href = 'first.php';
+                        window.location.href = 'second.php';
                         </script>";   
                     }
                     else {
                         echo "<script type='text/javascript'>
                         alert('CSV File has been successfully Imported.');
-                        window.location.href = 'first.php';
+                        window.location.href = 'second.php';
                         </script>";
                     }
                } 
