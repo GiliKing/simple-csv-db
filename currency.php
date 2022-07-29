@@ -2,6 +2,7 @@
 
 include_once "./config/Database.php";
 
+echo "yes";
 
 class Upload {
 
