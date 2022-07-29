@@ -48,13 +48,13 @@ class Upload {
                    if(!isset($result)){
                     echo "<script type='text/javascript'>
                         alert('Invalid File:Please Upload CSV File.');
-                        window.location.href = 'index.php';
+                        window.location.href = 'first.php';
                         </script>";   
                     }
                     else {
                         echo "<script type='text/javascript'>
                         alert('CSV File has been successfully Imported.');
-                        window.location.href = 'index.php';
+                        window.location.href = 'first.php';
                         </script>";
                     }
                } 
