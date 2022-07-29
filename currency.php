@@ -28,9 +28,7 @@ class Upload {
            $filename = $_FILES["file"]["tmp_name"];
        
            if($_FILES["file"]["size"] > 0 && !empty($_FILES['file']['name']) && in_array($_FILES['file']['type'], $fileMimes)){ 
-       
-               require '../config/Database.php';
-       
+              
                $file = fopen($filename, "r");
        
                $data = [];
